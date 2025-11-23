@@ -1,5 +1,5 @@
 import * as THREE from "three";
-import { WHITE_COLOR, GREEN_COLOR, PIVOT } from "./meta/consts";
+import { WHITE_COLOR, GREEN_COLOR, PIVOT } from "../meta/consts";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(

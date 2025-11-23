@@ -1,8 +1,15 @@
 {
+  "scripts": {
+    "build": "npx webpack --config webpack.config.js",
+    "dev": "npx vite"
+  },
   "dependencies": {
+    "lodash": "^4.17.21",
     "three": "^0.181.0"
   },
   "devDependencies": {
-    "vite": "^7.1.12"
+    "vite": "^7.1.12",
+    "webpack": "^5.103.0",
+    "webpack-cli": "^6.0.1"
   }
 }
