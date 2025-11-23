@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { WHITE_COLOR, GREEN_COLOR, PIVOT } from "../meta/consts";
+import { cubeMath } from './math.js';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -24,7 +25,9 @@ scene.add(cube);
 const ambient = new THREE.AmbientLight(0x404040);
 scene.add(ambient);
 
-const geometrySphere = new THREE.SphereGeometry(0.3, 32, 16);
+const heightSegmentsSphere = cubeMath(4); /// for test
+
+const geometrySphere = new THREE.SphereGeometry(0.3, 32, heightSegmentsSphere);
 const materialSphere = new THREE.MeshStandardMaterial({
   color: WHITE_COLOR,
   emissive: WHITE_COLOR,
